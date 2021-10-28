@@ -62,7 +62,7 @@ async def auto_filter(bot, update):
     if filters:
         results.append(
                 [
-                    InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 💢", url=f"https://t.me/{MT_CHANNEL_USERNAME}")
+                    InlineKeyboardButton("🎖️ 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🎖️", url=f"https://t.me/{MT_CHANNEL_USERNAME}")
                 ]
             )
         for filter in filters: # iterating through each files
@@ -86,7 +86,7 @@ async def auto_filter(bot, update):
             file_size = "" if file_size == ("[0 B]") else file_size
             
             # add emoji down below inside " " if you want..
-            button_text = f"ᵐᵇ:- {file_size}🎀ᶠⁱˡᵉ ⁿᵃᵐᵉ:-{file_name}"
+            button_text = :- 🎖️{file_size}🎖️:-{file_name}"
             
 
             if file_type == "video":
@@ -158,7 +158,7 @@ async def auto_filter(bot, update):
         
         # Just A Decaration
         result[0].append([
-            InlineKeyboardButton(f"📑 𝙿𝚊𝚐𝚎 1/{len_result if len_result < max_pages else max_pages} 📑", callback_data="ignore")
+            InlineKeyboardButton(f"🎖️ 𝙿𝚊𝚐𝚎 1/{len_result if len_result < max_pages else max_pages} 🎖️", callback_data="ignore")
         ])
         
         
@@ -209,7 +209,9 @@ async def auto_filter(bot, update):
             await bot.send_photo(
                 chat_id = update.chat.id,
                 photo= MASSAGE_PHOTO,
-                caption=f"<b>🗂️Total File :- {(len_results)} </b>\n<b>🎬Movie Name :-</b> <code>{query}</code>",
+                caption=f"<b>🎖️Total File /n🤪 ᴘʀᴏ ᴛɪᴘs  : If you don't see the files of the movie you asked for look at next page
+
+😁 പ്രൊ ടിപ്സ് : ചോദിച്ച മൂവി ഫയൽ കാണുന്നില്ല എങ്കിൽ അടുത്ത പേജിൽ നോക്കുക:- {(len_results)} </b>\n<b>🎬Movie Name :-</b> <code>{query}</code>",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
