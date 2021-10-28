@@ -5,14 +5,11 @@
 class Translation(object):
     
     START_TEXT = """<b>Hey {}!!</b>
-<i>Am Just A Advance Auto Filter Bot....😉
-Just Add Me To Your Group And Channel And Connect Them And See My Pevers 🌚🎀
-For More Details Click Help Button Below..
-@sabotschannel
+<i>njan oru auto filter bot v2 anee my creator is👉@arshad6153
 </i>"""        
     
     HELP_TEXT = """
-<b>make this bot admin in your channel</b>
+<b>help ath njan ചെയ്യില്ല 👇👇ഡൗൺ you can see that is use less ok😅😊😝</b>
 
 <i>
 -> and add files to in your db l:)
