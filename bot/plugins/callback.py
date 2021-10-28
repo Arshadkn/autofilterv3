@@ -95,7 +95,7 @@ async def cb_navg(bot, update: CallbackQuery):
 
     if not int(index_val) == 0:    
         temp_results.append([
-            InlineKeyboardButton(f"📑 Page {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 📑", callback_data="ignore")
+            InlineKeyboardButton(f"🎖️ Page {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 🎖️", callback_data="ignore")
         ])
     
     if show_invite and int(index_val) !=0 :
@@ -142,7 +142,9 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-    text=f"<b>🗂️Total File :- {leng}</b>\n<b>🎬Movie Name :-</b> <code>{query}</code>"
+    text=f"<b>🎖️Total File /n  🤪 ᴘʀᴏ ᴛɪᴘs  : If you don't see the files of the movie you asked for look at next page
+
+😁 പ്രൊ ടിപ്സ് : ചോദിച്ച മൂവി ഫയൽ കാണുന്നില്ല എങ്കിൽ അടുത്ത പേജിൽ നോക്കുക:- {leng}</b>\n<b>🎬Movie Name :-</b> <code>{query}</code>"
         
     try:
         await update.message.edit(
@@ -1608,7 +1610,7 @@ async def cb_about(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "My Dev ⚡", url="https://t.me/sunaif_adkar"
+                    "My Dev ⚡", url="https://t.me/arshad6153"
                 ),
                 
             InlineKeyboardButton
@@ -1639,10 +1641,10 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('👨‍💼𝙼𝚢 𝙳𝚎𝚟', url='https://t.me/sunaif_adkar'),
-            InlineKeyboardButton('𝚂𝚘𝚞𝚛𝚌𝚎 𝙲𝚘𝚍𝚎🧾', url ='https://t.me/sabotschannel/12')
+            InlineKeyboardButton('👨‍💼𝙼𝚢 𝙳𝚎𝚟', url='https://t.me/arshad6153'),
+            InlineKeyboardButton('🎖️join my group 🎖️', url ='https://t.me/movievillagegroup')
         ],[
-            InlineKeyboardButton('⚙️𝙷𝚎𝚕𝚙⚙️', callback_data="help")
+            InlineKeyboardButton('⚙️ help⚙️', callback_data="help")
         ],[
             InlineKeyboardButton('🗣️𝙰𝚗𝚢 𝙳𝚘𝚞𝚋𝚝', url='https://chat.whatsapp.com/GS6WZFCyrl60pszygT9wPS'),
             InlineKeyboardButton('𝚄𝚙𝚍𝚊𝚝𝚎𝚜🤖', url='https://t.me/sabotschannel/11')
@@ -1680,10 +1682,10 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "about": 
         buttons = [[
-            InlineKeyboardButton('👤 SUNAIF ADKAR', url='https://t.me/sunaif_adkar'),
-            InlineKeyboardButton('Support 👤', url='https://chat.whatsapp.com/GS6WZFCyrl60pszygT9wPS')
+            InlineKeyboardButton('💯creator💯, url='https://t.me/arshad6153'),
+            InlineKeyboardButton('🎖️join🎖️', url='https://t.me/movievillagegroup')
         ],[
-            InlineKeyboardButton('🍂 REPO 🍂', url='https://t.me/sabotschannel/12')
+            InlineKeyboardButton('🔐 REPO 🔐', url='https://t.me/sabotschannel/12')
         ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('Close 🔐', callback_data='close')
